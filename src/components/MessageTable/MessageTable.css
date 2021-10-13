@@ -1,0 +1,52 @@
+
+
+.messageTable {
+    width: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-top: 32px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.header {
+    background-color: #dddddd;
+}
+
+.delete {
+    margin-left: 4px;
+    margin-right: 4px;
+    
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 2px;
+    color: #EAEAE9;
+}
+
+.delete {
+    background-color: #f44336;
+}
+
+.delete:hover {
+    background-color: #ce392f;
+}
+
+.read {
+    background-color: #d69732;
+}
+
+.read:hover {
+    background-color: #b8822b;
+}
+
+.elementRead {
+    background-color: #92e6ff;
+}
+
+.elementNoRead {
+    background-color: #ffffff;
+}
