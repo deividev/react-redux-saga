@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Messages.view.css';
+import './Messages.view.scss';
 //Components
 import MessageHeader from '../../components/MessagesHeader/MessageHeader'; 
 import MessageTable from '../../components/MessageTable/MessageTable';
@@ -8,11 +8,12 @@ import MessageTable from '../../components/MessageTable/MessageTable';
 export default function Messages() {
     const [messages, setMessages] = useState([]);
     
-    let newMessage = () => {
+    function newMessage(mensaje) {
+      debugger
       let nuevo = {
-            "asunto": "Prueba",
-            "email": "email@email.com",
-            "mensaje": `Este es un mensaje de pruebas... ${Math.random()}`,
+            "asunto": mensaje.asunto,
+            "email": mensaje.email,
+            "mensaje": mensaje.mensaje,
             "leido": false
       };
       setMessages(messages => [...messages, nuevo]);
@@ -33,8 +34,8 @@ export default function Messages() {
     };
 
     return (
-      <div class="messages">
-        <MessageHeader clickNuevo={newMessage} clickEliminar={deleteMessages}>
+      <div className="messages">
+        <MessageHeader clickNuevo={newMessage} clickEliminar={deleteMessages} send={newMessage}>
         </MessageHeader>
         
         <MessageTable messages={messages} clickEliminarUno={deleteMessage} clickCheckRead={readMessage}>

@@ -1,0 +1,78 @@
+
+	
+@import "../../styles/colors.scss";
+
+
+.messageHeader {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+
+.button {
+        margin: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 4px;
+
+        color: #EAEAE9;
+        padding: 5px 10px;
+
+}
+
+.clean {
+    @extend .button;
+    background-color: $danger;
+}
+
+.clean:hover {
+    background-color: $dangerDark;
+}
+
+	
+.new {
+    @extend .button;
+    background-color: $success;
+}
+
+.new:hover {
+    background-color: $successDark;
+}
+
+.btn-disabled {
+    @extend .button;
+    background-color: $disabled;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.form input[type=text], input[type=email], textarea {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+.error-input {
+    border: 1px solid rgb(172, 15, 15);
+}
+
+.error {
+    padding: 0 20px;
+    color: rgb(172, 15, 15);
+    text-align: left;
+}
+
+.input {
+    border: 1px solid #ccc;
+}

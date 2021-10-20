@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Messages from './views/Message/Messages.view';
 
 function App() {

@@ -1,5 +1,5 @@
 	
-import './MessageTable.css';
+import './MessageTable.scss';
  
 export default function MessageTable(props) {
   return (
