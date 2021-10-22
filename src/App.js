@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
-import Messages from './views/Message/Messages.view';
+import Messages from './components/container/Message/MessagesContainer';
 
 function App() {
   return (

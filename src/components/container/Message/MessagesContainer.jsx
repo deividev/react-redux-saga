@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import './Messages.view.scss';
+import './MessagesContainer.scss';
 //Components
-import MessageHeader from '../../components/MessagesHeader/MessageHeader'; 
-import MessageTable from '../../components/MessageTable/MessageTable';
+import MessageHeader from '../../pure/forms/MessagesHeader/MessageHeader'; 
+import MessageTable from '../MessageTable/MessageTable';
+// import TaskListComponent from '../../components/container/TaskListComponent';
 
 
 export default function Messages() {
@@ -40,6 +41,7 @@ export default function Messages() {
         
         <MessageTable messages={messages} clickEliminarUno={deleteMessage} clickCheckRead={readMessage}>
         </MessageTable>
+        {/* <TaskListComponent></TaskListComponent> */}
       </div>
     );
   }

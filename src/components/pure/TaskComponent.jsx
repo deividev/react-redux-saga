@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Task } from '../../models/task.class';
 
-const taskComponent = ({ task }) => {
+const TaskComponent = ({ task }) => {
 
         return (
             <div>
@@ -22,8 +22,8 @@ const taskComponent = ({ task }) => {
         );
 }
 
-taskComponent.propTypes = {
+TaskComponent.propTypes = {
     task: PropTypes.instanceOf(Task)
 };
 
-export default taskComponent;
+export default TaskComponent;
