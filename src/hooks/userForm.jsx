@@ -3,8 +3,8 @@ import { useState } from "react";
 export const useForm = (initialForm, validateForm, props) => {
     const [form, setForm] = useState(initialForm);
     const [errors, setErrors] = useState({});
-    const [loading, setLoading] = useState(false);
-    const [response, setResponse] = useState(null);
+    // const [loading, setLoading] = useState(false);
+    // const [response, setResponse] = useState(null);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -18,6 +18,7 @@ export const useForm = (initialForm, validateForm, props) => {
         setErrors(validateForm(form));
     };
     const handleSubmit = (e) => {
+        debugger
             form.valid = true;
             e.preventDefault();
             props.send(form);
@@ -27,8 +28,8 @@ export const useForm = (initialForm, validateForm, props) => {
     return {
         form,
         errors,
-        loading,
-        response,
+        // loading,
+        // response,
         handleChange,
         handleBlur,
         handleSubmit
