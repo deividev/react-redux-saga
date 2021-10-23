@@ -98,8 +98,7 @@ export default function MessageHeader(props, send) {
             <button 
               type="submit" 
               className='new'
-              >Nuevo</button>
-            <button onClick={props.clickEliminar} className="clean">Vaciar</button> 
+              >Crear</button>
           </div>
           
         </form>

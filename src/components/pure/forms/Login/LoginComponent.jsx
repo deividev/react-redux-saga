@@ -32,10 +32,10 @@ const LoginComponent = (props, send) => {
       } = useForm(initialForm, validationsForm, props);
 
         return (
-            <div>
-               <form onSubmit={handleSubmit}>
-                   <div className="flex flex-column">
-                        <label>Email</label>
+            <div className="messageHeader">
+               <form className="form" onSubmit={handleSubmit}>
+                   <div >
+                        <label >Email</label>
                         <input 
                             className={errors.email ? 'error-input' : 'input'} 
                             placeholder="Escribe su email"

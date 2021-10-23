@@ -45,7 +45,7 @@ export default function Messages() {
     };
 
     let setLogout = () => {
-      dispatch(logout())
+      dispatch(logout());
     }
 
     return (
@@ -59,13 +59,16 @@ export default function Messages() {
           }   
           { userData.isLogin &&
             <div className="messages">
-            <button onClick={setLogout}>Logout</button>
+              <div className="flex">
+                <button className="clean" onClick={setLogout}>Logout</button>
+              </div>
+            
           
             <div className="messages">
-              <MessageHeader clickNuevo={newMessage} clickEliminar={deleteMessages} send={newMessage}>
+              <MessageHeader clickNuevo={newMessage}  send={newMessage}>
               </MessageHeader>
               
-              <MessageTable messages={messages} clickEliminarUno={deleteMessage} clickCheckRead={readMessage}>
+              <MessageTable messages={messages} clickEliminar={deleteMessages} clickEliminarUno={deleteMessage} clickCheckRead={readMessage}>
               </MessageTable>
             </div>
           </div>
