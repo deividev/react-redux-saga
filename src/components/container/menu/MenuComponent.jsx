@@ -1,17 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-const MenuComponent = () => {
+import './MenuComponent.scss';
+
+
+export default function MenuComponent() {
     
         return (
-            <div>
-                
+            <div className="nav">
+                <Link className="nav-link" to="/">Store</Link>
+                <Link className="nav-link" to="/task">To-do</Link>
+                <Link className="nav-link" to="/about">About</Link>
             </div>
         );
 }
 
-MenuComponent.propTypes = {
-
-};
-
-export default MenuComponent;

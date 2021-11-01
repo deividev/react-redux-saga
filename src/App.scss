@@ -1,5 +1,14 @@
+
+	
+@import "./styles/colors.scss";
+
 .App {
-  text-align: center;
+  height: 100vh;
+  padding: 12px 36px;
+  box-sizing: border-box;
+
+  background-color:  $dark;  /* #282c34 */
+  color: white;
 }
 
 .App-logo {

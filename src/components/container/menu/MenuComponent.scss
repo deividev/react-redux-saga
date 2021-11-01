@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 12px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
