@@ -57,7 +57,7 @@ export default function MessageHeader(props, send) {
   return (
     <div className="messageHeader">
         <form onSubmit={handleSubmit} className="form">
-            <strong>Mi formulario</strong>
+            <strong className="form__title">Mi formulario</strong>
             
             <input 
               className={errors.asunto ? 'error-input' : 'input'} 

@@ -13,10 +13,10 @@ export const login = (user) => {
     }
   }
 
-  // export const getUser = (user) => {
-  //   return {
-  //     type: 'getUser',
-  //     payload: user
-  //   }
-  // }
- 
+  export const isLogged = (user) => {
+    debugger
+    return {
+      type: 'isLogged',
+      payload: user
+    }
+  }

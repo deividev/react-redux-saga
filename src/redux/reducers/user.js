@@ -25,6 +25,11 @@ export const user = (state = initialState.user, action) => {
           isLogin: false
         }
         return state;
+
+      case ('isLogged'):
+        return {
+          ...state
+        };
       default:
         return state;
     }

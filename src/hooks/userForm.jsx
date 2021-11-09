@@ -5,7 +5,7 @@ export const useForm = (initialForm, validateForm, props) => {
     const [errors, setErrors] = useState({});
     // const [loading, setLoading] = useState(false);
     // const [response, setResponse] = useState(null);
-
+    //setForm(initialForm);
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForm({
@@ -18,6 +18,7 @@ export const useForm = (initialForm, validateForm, props) => {
         setErrors(validateForm(form));
     };
     const handleSubmit = (e) => {
+        debugger
             form.valid = true;
             e.preventDefault();
             props.send(form);
