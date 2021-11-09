@@ -14,7 +14,6 @@ export const login = (user) => {
   }
 
   export const isLogged = (user) => {
-    debugger
     return {
       type: 'isLogged',
       payload: user

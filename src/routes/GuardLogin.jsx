@@ -11,7 +11,6 @@ export const GuardLogin = ({ component: Component, ...rest }) => {
         <Route
             {...rest}
             render={ props => {
-                debugger
                 if(isLogin) {
                     return <Component {...props} />;
                 } else {

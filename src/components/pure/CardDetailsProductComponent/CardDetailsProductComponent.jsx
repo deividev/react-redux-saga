@@ -3,10 +3,6 @@ import React from 'react';
 const CardDetailsProductComponent = (props) => {
     let { id, title, description, price } = props.history.location.state;
 
-    debugger
-
- 
-
     return (
         <div className="grid">
             <div >

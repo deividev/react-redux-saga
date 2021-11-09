@@ -18,7 +18,6 @@ export const useForm = (initialForm, validateForm, props) => {
         setErrors(validateForm(form));
     };
     const handleSubmit = (e) => {
-        debugger
             form.valid = true;
             e.preventDefault();
             props.send(form);

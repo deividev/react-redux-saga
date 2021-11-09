@@ -27,7 +27,7 @@ function App() {
 
 
   function setLogin(user) {
-    debugger
+
     if(!localStorage.getItem(user.email) && !user.isLogin){ 
       let userLogin = {
         email: user.email,

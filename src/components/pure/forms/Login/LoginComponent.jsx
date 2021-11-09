@@ -15,7 +15,6 @@ const LoginComponent = (props, send) => {
         isLogin: false
     };
     const validationsForm = (form) => {
-        debugger
         let errors = {};
         const regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
         
@@ -30,14 +29,12 @@ const LoginComponent = (props, send) => {
             errors.password = 'La password es obligatoria';
         }
         else if (form.password.length < 5) {
-            debugger
             errors.password = 'La password minimo tiene que contener 5 characteres';
         }
         return errors;
     };
 
     // const redirectToTask = () => {
-    //     debugger
     //     history.push({
     //         pathname: '/task',
     //     })
