@@ -68,13 +68,13 @@ function App() {
         </header>
         <div className="App-body">
           <GuardLogin  path="/todo" component={ToDo}/>
-          <GuardLogin  path="/store" component={Store}/>
+          <Route  path="/store" component={Store}/>
           {/* <Route exact path="/register" component={Store}/> */}
 
           <Route exact path="/about" component={About}/>
           <Route path="/product/:id" component={CardDetailsProductComponent}/>
 
-          {isLogged ?  <Redirect to='/todo'/>  : <Redirect to='/login'/>}
+          {isLogged ?  <Redirect to='/store'/>  : <Redirect to='/login'/>}
         </div> 
 
         <footer></footer>

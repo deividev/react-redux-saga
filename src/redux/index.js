@@ -2,7 +2,7 @@
 import { createStore, combineReducers } from 'redux';
 import { mensajes } from './reducers/message';
 import { user } from './reducers/user';
- 
+import { products } from './reducers/product';
  
 // STORE - El estado global de la aplicación.
 
@@ -10,7 +10,8 @@ import { user } from './reducers/user';
 
 let reducers = combineReducers({
     mensajes: mensajes,
-    user: user
+    user: user,
+    products: products
 });
     let store = createStore(
         reducers, 

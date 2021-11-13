@@ -16,7 +16,7 @@ const CardProductComponent = ({ products }) => {
                 title: product.title,
                 description: product.description,
                 price: product.price,
-                
+                image: product.image
             }
         }  
     }
@@ -26,12 +26,14 @@ const CardProductComponent = ({ products }) => {
         <div className="grid">
            {
                products.map((product, index) =>
-               (
-                   <div className="card" key={index}>
-                       <h4>{product.title}</h4>
-                       <span>{product.price}</span>
-                       <Link className="Product-link" to={abrirProducto(product)}>Detalle</Link>
-                   </div>
+               (   <Link className="Product-link" to={abrirProducto(product)}>
+                    <div className="card" key={index}>
+                        <h4 className="title">{product.title}</h4>
+                        <img width="200px" height="200px" src={product.image}alt="" />
+                        <span className="price">{product.price}</span>
+                        <button className="btn btn-success">Mas info</button>
+                    </div>
+                   </Link>
                ))
            }
         </div>

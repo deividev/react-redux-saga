@@ -1,7 +1,8 @@
-
+@import '../../../styles/colors.scss';
 
 .grid {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -9,11 +10,35 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-width: 200px;
+    width: 280px;
+    height: 460px;
     background-color: #fff;
     padding: 20px;
     color: #111;
     border-radius: 6px;
+    border: 2px solid rgb(143, 143, 143);
     margin-left: 40px;
-    margin-bottom: 40px;
+    margin: 30px 20px;
 }
+
+.title {
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.price {
+    margin: 20px 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-success {
+    background-color: $success;
+    color: #fff
+}
+
+.btn-success:hover {
+    background-color: $successDark;
+}
+

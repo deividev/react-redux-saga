@@ -3,12 +3,8 @@
 @import "./styles/colors.scss";
 
 .App {
-  height: 100vh;
-  padding: 12px 0px;
   box-sizing: border-box;
-
-  background-color:  $dark;  /* #282c34 */
-  color: white;
+  // background-color:  $dark;  /* #282c34 */
 }
 
 .App-logo {
@@ -45,4 +41,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+.btn {
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.px-20 {
+  padding: 20px 0;
 }
