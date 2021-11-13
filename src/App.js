@@ -74,7 +74,7 @@ function App() {
           <Route exact path="/about" component={About}/>
           <Route path="/product/:id" component={CardDetailsProductComponent}/>
 
-          {isLogged ?  <Redirect to='/store'/>  : <Redirect to='/login'/>}
+          {isLogged ?  <Redirect to='/todo'/>  : <Redirect to='/login'/>}
         </div> 
 
         <footer></footer>
